@@ -24,13 +24,14 @@ export default {
   name: "BookForm",
   props: ["books"],
   data() {
-    const bookData = {
-      bookTitle: "",
-      bookAuthor: "",
-      finishedReading: false,
-      ownership: []
-    };
-    return bookData;
+    return {
+      bookData : {
+        bookTitle: "",
+        bookAuthor: "",
+        finishedReading: false,
+        ownership: []
+      }
+    }
   },
   methods: {
     bookSubmit(bookData) {
